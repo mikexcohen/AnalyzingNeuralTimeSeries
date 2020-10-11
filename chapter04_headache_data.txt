@@ -1,0 +1,13 @@
+this is a text file with mixed strings and numbers. 
+each row contains different information, some useful and some useless.
+we'll use matlab to read in each line separately, figure
+out whether to keep or trash that line, and extract the data we want. 
+
+in this file, label-value data pairs are separated by tabs. it's the one 
+useful thing we have to go on here. 
+
+
+behavioral data begin on the following line
+trial	1	choice	2	rt	450	accuracy	1
+choice	2	trial	2	accuracy	0	rt	830
+well, i could go on and on, but by this time you'll get the idea
