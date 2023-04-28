@@ -53,7 +53,7 @@ end
 
 
 % open and name figure
-figure, set(gcf,'Name','Movie magic minimizes the mystery.','Number','off');
+figure, set(gcf,'Name','Movie magic minimizes the mystery.');
 
 % draw the filtered signals
 subplot(321)
