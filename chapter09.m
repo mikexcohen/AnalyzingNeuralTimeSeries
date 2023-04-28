@@ -25,7 +25,7 @@ num_trials2plot = 12;
 
 
 figure
-set(gcf,'Name',[ num2str(num_trials2plot) ' random trials from channel ' which_channel_to_plot ],'Number','off')
+set(gcf,'Name',[ num2str(num_trials2plot) ' random trials from channel ' which_channel_to_plot ])
 for i=1:num_trials2plot
     
     % figure out how many subplots we need
