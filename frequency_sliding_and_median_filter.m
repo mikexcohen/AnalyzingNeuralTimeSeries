@@ -90,11 +90,11 @@ for fi=1:num_freq_bands
     for triali=1:EEG.trials
         
         % get analytic signal via Hilbert transform
-        temphilbert = hilbert(squeeze(filterdata(:,:,triali))')';
+        temphilbert = hilbert(squeeze(filterdata(:,:,triali)).').';
         
         % compute frequency sliding (note that this signal may be noisy;
         % median filtering is recommended before interpretation)
-        freqslide_prefilt(:,1:end-1,triali) = diff(EEG.srate*unwrap(angle(temphilbert'),[],2)',1,2)/(2*pi);
+        freqslide_prefilt(:,1:end-1,triali) = diff(EEG.srate*unwrap(angle(temphilbert.'),[],1).',1,2)/(2*pi);
         
         % and power (only at requested time points)
         temppow(:,:,triali) = abs(temphilbert(:,times2saveidx)).^2;
